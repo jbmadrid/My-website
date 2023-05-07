@@ -1,0 +1,108 @@
+body {margin:0;}
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #262626;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #012169;
+  }
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+.topnav li {
+    float: left;
+}
+.topnav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: large;
+  }
+.topnav li:last-child {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: none;
+    margin-right: 70px;
+    font-size: x-large;
+  } 
+.topnav a:hover {
+    background-color: #00539B;
+  }
+.column {
+    float: left;
+    padding-top: 50px;
+    padding-right: 75px;
+  } 
+.column.left {
+    width: 65%;
+    padding-left: 75px;
+    padding-right: 50px;
+  } 
+.column.left p{
+    max-width: 950px;
+  }
+.column.right {
+    float: right;
+    width: 35%;
+    max-width: 300px;
+    text-align: center;
+    padding-left: 20px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+.column.right p{
+    padding-left: 10px;
+    padding-top: -1px;
+    padding-top: -1px;
+    text-align: left;
+    font-size: small;
+  }
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+img {
+    width: 100%;
+    height: auto;
+    border: 5px double lightgray;
+    border-radius: 5px;
+  }
+hr.head {
+    border: 1px solid #00539B;
+    border-radius: 5px;
+  }
+h2 {
+    font-size: x-large;
+    position: relative;
+    max-width: 950px;
+  }
+h2 span {
+    background-color: white;
+    color: #00539B;
+  }
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 3px solid #00539B;
+    z-index: -1;
+  }
+li {
+  max-width: 900px;
+}
