@@ -106,3 +106,16 @@ h2:after {
 li {
   max-width: 900px;
 }
+.pagebody {
+  padding: 50px 100px
+}
+@media screen and (max-width: 800px) { 
+    ul.topnav li {float: none; font-size: medium;}
+    ul.topnav li:last-child {display: none}
+    .column.left {width: 100%; padding-left: 10px; padding-right: 10px;}
+    .column.right {width: 100%;}
+    .column.right {margin: auto; float: none}
+    .column {padding: 10px 10px}
+    h2 {font-size: medium;}
+    ul {font-size: medium;}
+}
