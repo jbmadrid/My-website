@@ -109,13 +109,55 @@ li {
 .pagebody {
   padding: 50px 100px
 }
-@media screen and (max-width: 800px) { 
-    ul.topnav li {float: none; font-size: medium;}
-    ul.topnav li:last-child {display: none}
+.dropbtn {
+  background-color: #012169;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  display: none;
+  overflow: hidden;
+  margin: auto;
+  float: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #012169;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #00539B}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #00539B;
+}
+.menuicon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+@media only screen and (max-width: 800px) { 
     .column.left {width: 100%; padding-left: 10px; padding-right: 10px;}
     .column.right {width: 100%;}
     .column.right {margin: auto; float: none}
     .column {padding: 10px 10px}
     h2 {font-size: medium;}
     ul {font-size: medium;}
+    .pagebody {padding: 10px 10px}
+    .topnav {display: none;}
+    .dropdown {display: inline-block}
 }
